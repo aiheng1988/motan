@@ -175,7 +175,7 @@ The quick start gives very basic example of running client and server on the sam
     }
     ```
 
-2. Include the plugin into the POM file to set `target/generated-sources/annotations/` as source folder.  
+2. Include the plugin into the POM file to set `target/generated-sources/annotations/` as source folder.  (Maven Plugin maven-compiler-plugin version must greater than 3.5.1)
 
     ```xml
     <plugin>
@@ -197,7 +197,7 @@ The quick start gives very basic example of running client and server on the sam
         </executions>
     </plugin>
     ```
-
+   
 3. Modify referer's attribute `interface` in `motan_client.xml` from `FooService` to `FooServiceAsync`.
 
     ```xml
